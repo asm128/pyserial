@@ -297,6 +297,8 @@ Native ports
 
     .. attribute:: ri
 
+It's not clear what read() returns if you specify a stop sequence. Do the returned bytes include the stop sequence? What does the function return if timeout was triggered instead?
+
         :getter: Get the state of the RI line
         :type: bool
 
@@ -433,6 +435,8 @@ Native ports
     The following constants are also provided:
 
     .. attribute:: BAUDRATES
+It's not clear what read() returns if you specify a stop sequence. Do the returned bytes include the stop sequence? What does the function return if timeout was triggered instead?
+
 
         A list of valid baud rates. The list may be incomplete, such that higher
         and/or intermediate baud rates may also be supported by the device
